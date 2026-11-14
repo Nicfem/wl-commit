@@ -1,0 +1,17 @@
+# Включаем нужные проверки
+Checks: >
+  -*,
+  bugprone-*,
+  readability-*,
+  modernize-use-nullptr,
+  modernize-use-bool-literals,
+  modernize-use-using,
+  modernize-macro-to-enum
+
+# Превращаем предупреждения линтера в ошибки компиляции (по желанию)
+WarningsAsErrors: 'modernize-*'
+
+CheckOptions:
+  # Некоторые проверки можно тонко донастроить здесь
+  readability-identifier-naming.VariableCase: lower_case
+

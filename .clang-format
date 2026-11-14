@@ -1,0 +1,29 @@
+Language: Cpp
+BasedOnStyle: LLVM
+
+# 1. Твое пожелание: тип возвращаемого значения НАД названием функции
+AlwaysBreakAfterDefinitionReturnType: TopLevel
+AlwaysBreakAfterReturnType: TopLevel
+
+# 2. Твое пожелание: красивый перенос аргументов функций по сетке
+AlignAfterOpenBracket: Align
+AllowAllParametersOfDeclarationOnNextLine: false
+BinPackArguments: false
+BinPackParameters: false
+
+# Базовые настройки для C (ближе к Linux Kernel / WebKit)
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never # Заменяет табы на 4 пробела (лучше для переносимости)
+ColumnLimit: 100 # Максимальная длина строки
+
+# Оформление фигурных скобок
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true # Скобка функции идет на новой строке
+  AfterControlStatement: false # Скобки if/else/while остаются на той же строке
+  BeforeElse: false
+
+# Сортировка инклудов по алфавиту
+SortIncludes: CaseSensitive
+

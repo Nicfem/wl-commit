@@ -1,0 +1,8 @@
+.direnv/
+build/
+result/
+.clangd
+node_modules/
+@types/
+dist/
+result
